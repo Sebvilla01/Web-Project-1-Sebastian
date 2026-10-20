@@ -5,5 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Give us your opinion</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a><br /></li>
+          <li>
+            <a href="second-page.html">Who is involved in the shortage?</a>
+          </li>
+          <li>
+            <a href="feedback-form.html">Give us Feedback!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Give us Feedback!</h1>
+    <p>
+      Note:This is for a school project the information is public dont put
+      private information.
+    </p>
+    <form id="feedback" name="feedback-form" method="get">
+      <fieldset form="feedback">
+        <legend>Contact Information</legend>
+        <label for="full-name">Name (ex. john) (required):</label>
+        <input type="text" id="full-name" name="name" required />
+        <br /><br />
+
+        <label for="email-address">
+          Email address (ex. yourname@mail.com) (required):
+        </label>
+        <input type="email" id="email-address" name="email" required />
+        <br /><br />
+
+        <label for="phone-number"
+          >Phone number (optional) (ex.210-192-1929):</label
+        >
+        <input type="tel" id="phone-number" name="phone" />
+      </fieldset>
+      <!--The end of the first fieldset-->
+      <br />
+      <br />
+      <!--The start of the second fieldset about peoples comments-->
+      <fieldset>
+        <legend>Put your comments here!</legend>
+        <label for="comments">what did you think of the website?</label>
+        <br />
+        <textarea id="comments" name="comments" rows="10" cols="50"></textarea>
+        <br />
+        <br />
+        <label for="evidence"
+          >put any links that might help me improve my website here</label
+        >
+        <input type="url" id="evidence" name="evidence" />
+        <br />
+      </fieldset>
+    </form>
+  </body>
 </html>
