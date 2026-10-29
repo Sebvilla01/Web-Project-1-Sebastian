@@ -25,58 +25,69 @@
       </p>
     </header>
     <main>
-    <form id="feedback" name="feedback-form" method="get">
-      <fieldset form="feedback">
-        <legend>Contact Information</legend>
-        <label for="full-name">Name (ex. john) (required):</label>
-        <input type="text" id="full-name" name="name" required />
-        <br /><br />
+      <form id="feedback" name="feedback-form" method="get">
+        <fieldset form="feedback">
+          <legend>Contact Information</legend>
+          <label for="full-name">Name (ex. john) (required):</label>
+          <input type="text" id="full-name" name="name" required />
+          <br /><br />
 
-        <label for="email-address">
-          Email address (ex. yourname@mail.com) (required):
-        </label>
-        <input type="email" id="email-address" name="email" required />
-        <br /><br />
+          <label for="email-address">
+            Email address (ex. yourname@mail.com) (required):
+          </label>
+          <input type="email" id="email-address" name="email" required />
+          <br /><br />
 
-        <label for="phone-number"
-          >Phone number (optional) (ex.210-192-1929):</label
-        >
-        <input type="tel" id="phone-number" name="phone" />
-      </fieldset>
-      </form>
-      <!--The end of the first fieldset-->
-      <br />
-      <br />
-      <!--The start of the second fieldset about peoples comments-->
-      <fieldset>
-        <legend>Put your comments here!</legend>
-        <label for="comments">What did you think of the website?</label>
-        <br />
-        <textarea id="comments" name="comments" rows="10" cols="50"></textarea>
+          <label for="phone-number"
+            >Phone number (optional) (ex.210-192-1929):</label
+          >
+          <input type="tel" id="phone-number" name="phone" />
+        </fieldset>
+        <!--The end of the first fieldset-->
         <br />
         <br />
-        <label for="evidence"
-          >Put any links that might help me improve my website here</label
-        >
-        <!--
+        <!--The start of the second fieldset about peoples comments-->
+        <fieldset>
+          <legend>Put your comments here!</legend>
+          <label for="comments">What did you think of the website?</label>
+          <br />
+          <textarea
+            id="comments"
+            name="comments"
+            rows="10"
+            cols="50"></textarea>
+          <br />
+          <br />
+          <label for="evidence"
+            >Put any links that might help me improve my website here</label
+          >
+          <!--
         This is a URL input type this allows us so paste a link in a text box,
         this also validates the certificates so you cant put random text in here.
         -->
-        <input type="url" id="evidence" name="evidence" />
+          <input type="url" id="evidence" name="evidence" />
+          <br />
+        </fieldset>
         <br />
-      </fieldset>
-    </form>
-    <br />
-    <br />
-    <input
-      type="submit"
-      id="submit-button"
-      name="submit"
-      value="Click to submit the form" />
-    <input
-      type="reset"
-      id="reset-button"
-      name="reset"
-      value="click to reset all your form" />
+        <br />
+        <input
+          type="submit"
+          id="submit-button"
+          name="submit"
+          value="Click to submit the form" />
+        <input
+          type="reset"
+          id="reset-button"
+          name="reset"
+          value="click to reset all your form" />
+      </form>
+    </main>
+    <footer>
+      <a
+        href="https://github.com/Sebvilla01/Web-Project-1-Sebastian"
+        target="_blank"
+        >&#169; Source code by Sebvilla01</a
+      >
+    </footer>
   </body>
 </html>
