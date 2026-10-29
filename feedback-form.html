@@ -25,6 +25,9 @@
       </p>
     </header>
     <main>
+      <!--
+      this is the start of my form 
+      -->
       <form id="feedback" name="feedback-form" method="get">
         <fieldset form="feedback">
           <legend>Contact Information</legend>
@@ -46,8 +49,8 @@
         <!--The end of the first fieldset-->
         <br />
         <br />
-        <!--The start of the second fieldset about peoples comments-->
-        <fieldset>
+        <!--The start of the third fieldset about peoples comments-->
+        <fieldset form="feedback">
           <legend>Put your comments here!</legend>
           <label for="comments">What did you think of the website?</label>
           <br />
@@ -62,14 +65,12 @@
             >Put any links that might help me improve my website here</label
           >
           <!--
-        This is a URL input type this allows us so paste a link in a text box,
-        this also validates the certificates so you cant put random text in here.
-        -->
+            This is a URL input type this allows us so paste a link in a text box,
+            this also validates the certificates so you cant put random text in here.
+          -->
           <input type="url" id="evidence" name="evidence" />
           <br />
         </fieldset>
-        <br />
-        <br />
         <input
           type="submit"
           id="submit-button"
