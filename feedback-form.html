@@ -26,32 +26,120 @@
     </header>
     <main>
       <!--
-      this is the start of my form 
+      The form tag is a way for the user to
+      give information to the developer about themselves.
+
+      This form has an id so the developer
+      can link fieldsets to this form.
+
+      This form has the method for uploading forms "get"
+      this indicates that the forms content will be displayed in the URL.
       -->
       <form id="feedback" name="feedback-form" method="get">
-        <fieldset form="feedback">
-          <legend>Contact Information</legend>
-          <label for="full-name">Name (ex. john) (required):</label>
-          <input type="text" id="full-name" name="name" required />
-          <br /><br />
+        <!-- First fieldset for contact information -->
+        <!--
+          This fieldset is used to group inputs
+          that are all asking to the user`s contact information.
 
+          This fieldset is linked to my form using the id="feedback"
+          so my HTML code can know that this fieldset is related to my form.
+        -->
+        <fieldset form="feedback">
+          <!--
+          Provides a way for the user to know what
+          the fieldset is about and what will they need.
+          -->
+          <legend>Contact Information</legend>
+          <!--
+          This is a label that will ask the user their full name,
+          it also is required.
+          -->
+          <label for="full-name">Name (ex. john) (required):</label>
+          <!--
+          This creates a text input box where users
+          will add their first and last name.
+
+          It has an id of of "full-name" so the input can be linked back to the label.
+
+          Even though we are not doing back-end coding,
+          the "name" which its used to send information to the back-end server is "name"
+
+          This is also a required input, meaning the user will not be able to submit the
+          form unless the user fills it out.
+          -->
+          <input type="text" id="full-name" name="name" required />
+          <!--
+          This adds additional space between the email-address and the input for the Full-name.
+          -->
+          <br />
+          <br />
+          <!--
+          This label is for the input that will
+          allow the user to enter their email.
+          -->
           <label for="email-address">
             Email address (ex. yourname@mail.com) (required):
           </label>
-          <input type="email" id="email-address" name="email" required />
-          <br /><br />
+          <!--
+          This input will create a blank text box
+          for the user to type out the user`s email.
 
+          It has an id of "email-address" so it can link back to the label.
+
+          It has the name atribute for back-end servers.
+
+          This is also a required input meaning that
+          the form will not submit until this field is filled.
+          -->
+          <input type="email" id="email-address" name="email" required />
+          <!--
+          This adds space between the email input and the phone number input.
+          -->
+          <br />
+          <br />
+          <!--
+          This is a label that will ask the user for their phone number.
+          -->
           <label for="phone-number"
             >Phone number (optional) (ex.210-192-1929):</label
           >
+          <!--
+          This input will create a blank text box
+          for the user to type out the user`s phone number.
+
+          It has an id of "Phone-number" so it can link back to the label.
+
+          It has the name="phone" atribute for back-end servers.
+
+          This is also NOT a required input meaning that
+          the form will submit even if this field is not filled
+          -->
           <input type="tel" id="phone-number" name="phone" />
+          <!--The end of the first fieldset-->
         </fieldset>
-        <!--The end of the first fieldset-->
+        <!--
+        This adds spaces between the end of the
+        first fieldset and the start of the second fieldset.
+        -->
         <br />
         <br />
-        <!--The start of the third fieldset about peoples comments-->
+        <!--
+        This fieldset is used to group inputs
+          that are all asking to the user`s Comments and evidence.
+
+          This fieldset is linked to my form using the id="feedback"
+          so my HTML code can know that this fieldset is related to my form.
+        -->
         <fieldset form="feedback">
+          <!--
+          Provides a way for the user to know what
+          the fieldset is about and what will they need.
+          -->
           <legend>Put your comments here!</legend>
+          <!--
+          This label is for the input that will
+          allow the user to enter their comments.
+          -->
           <label for="comments">What did you think of the website?</label>
           <br />
           <textarea
