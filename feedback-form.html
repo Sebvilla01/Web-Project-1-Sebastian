@@ -141,29 +141,83 @@
           allow the user to enter their comments.
           -->
           <label for="comments">What did you think of the website?</label>
+          <!--
+          This adds spaces between the label for
+          comments and the textarea for comments
+        -->
           <br />
+          <!--
+          The textarea input provides for a way for the user
+          to communicate extra text outside of normal questions
+
+          it uses the id of comments to connect back to the label so the user can know what the textarea is for
+          -->
           <textarea
             id="comments"
             name="comments"
             rows="10"
             cols="50"></textarea>
+          <!--
+          This adds spaces between the textarea and the <br />.
+        -->
           <br />
+          <!--
+          This adds spaces between one of the br and the other one
+          -->
           <br />
+          <!--
+          This label is for the input that will
+          allow the user to enter their evidence.
+          -->
           <label for="evidence"
             >Put any links that might help me improve my website here</label
           >
           <!--
             This is a URL input type this allows us so paste a link in a text box,
             this also validates the certificates so you cant put random text in here.
+
+          This input will create a blank text box
+          for the user to type out the user`s desierd URL.
+
+          It has an id of "evidence" so it can link back to the label.
+
+          It has the name="evidence" atribute for back-end servers.
+
+          This is also NOT a required input meaning that
+          the form will submit even if this field is not filled
           -->
           <input type="url" id="evidence" name="evidence" />
+          <!--
+          This adds space between the URL input and the end of the second fieldset
+          -->
           <br />
         </fieldset>
+        <br />
+        <!--
+          This input will create a button with the Click to submit the form text in it
+          for the user to click once they are done the form.
+
+          It has an id of "submit".
+
+          It has the name="submit" atribute for back-end servers.
+
+          This is the way fo the user to submit the form to the developer
+          -->
         <input
           type="submit"
           id="submit-button"
           name="submit"
           value="Click to submit the form" />
+        <!--
+          This input will create a button with the Click to reset all your form text in it
+          for the user to click once they are done the form.
+
+          It has an id of "reset-button".
+
+          It has the name="reset" atribute for back-end servers.
+
+          This is the way fo the user to erase all of their work if they need to.
+      -->
         <input
           type="reset"
           id="reset-button"
@@ -171,6 +225,9 @@
           value="click to reset all your form" />
       </form>
     </main>
+    <!--
+    
+    -->
     <footer>
       <a
         href="https://github.com/Sebvilla01/Web-Project-1-Sebastian"
