@@ -26,14 +26,14 @@
     </header>
     <main>
       <!--
-      The form tag is a way for the user to
-      give information to the developer about themselves.
+        The form tag is a way for the user to
+        give information to the developer about themselves.
 
-      This form has an id so the developer
-      can link fieldsets to this form.
+        This form has an id so the developer
+        can link fieldsets to this form.
 
-      This form has the method for uploading forms "get"
-      this indicates that the forms content will be displayed in the URL.
+        This form has the method for uploading forms "get"
+        this indicates that the forms content will be displayed in the URL.
       -->
       <form id="feedback" name="feedback-form" method="get">
         <!-- First fieldset for contact information -->
@@ -46,85 +46,85 @@
         -->
         <fieldset form="feedback">
           <!--
-          Provides a way for the user to know what
-          the fieldset is about and what will they need.
+            Provides a way for the user to know what
+            the fieldset is about and what will they need.
           -->
           <legend>Contact Information</legend>
           <!--
-          This is a label that will ask the user their full name,
-          it also is required.
+            This is a label that will ask the user their full name,
+            it also is required.
           -->
           <label for="full-name">Name (ex. john) (required):</label>
           <!--
-          This creates a text input box where users
-          will add their first and last name.
+            This creates a text input box where users
+            will add their first and last name.
 
-          It has an id of of "full-name" so the input can be linked back to the label.
+            It has an id of of "full-name" so the input can be linked back to the label.
 
-          Even though we are not doing back-end coding,
-          the "name" which its used to send information to the back-end server is "name"
+            Even though we are not doing back-end coding,
+            the "name" which its used to send information to the back-end server is "name"
 
-          This is also a required input, meaning the user will not be able to submit the
-          form unless the user fills it out.
+            This is also a required input, meaning the user will not be able to submit the
+            form unless the user fills it out.
           -->
           <input type="text" id="full-name" name="name" required />
           <!--
-          This adds additional space between the email-address and the input for the Full-name.
+            This adds additional space between the email-address and the input for the Full-name.
           -->
           <br />
           <br />
           <!--
-          This label is for the input that will
-          allow the user to enter their email.
+            This label is for the input that will
+            allow the user to enter their email.
           -->
           <label for="email-address">
             Email address (ex. yourname@mail.com) (required):
           </label>
           <!--
-          This input will create a blank text box
-          for the user to type out the user`s email.
+            This input will create a blank text box
+            for the user to type out the user`s email.
 
-          It has an id of "email-address" so it can link back to the label.
+            It has an id of "email-address" so it can link back to the label.
 
-          It has the name atribute for back-end servers.
+            It has the name atribute for back-end servers.
 
-          This is also a required input meaning that
-          the form will not submit until this field is filled.
+            This is also a required input meaning that
+            the form will not submit until this field is filled.
           -->
           <input type="email" id="email-address" name="email" required />
           <!--
-          This adds space between the email input and the phone number input.
+            This adds space between the email input and the phone number input.
           -->
           <br />
           <br />
           <!--
-          This is a label that will ask the user for their phone number.
+            This is a label that will ask the user for their phone number.
           -->
           <label for="phone-number"
             >Phone number (optional) (ex.210-192-1929):</label
           >
           <!--
-          This input will create a blank text box
-          for the user to type out the user`s phone number.
+            This input will create a blank text box
+            for the user to type out the user`s phone number.
 
-          It has an id of "Phone-number" so it can link back to the label.
+            It has an id of "Phone-number" so it can link back to the label.
 
-          It has the name="phone" atribute for back-end servers.
+            It has the name="phone" atribute for back-end servers.
 
-          This is also NOT a required input meaning that
-          the form will submit even if this field is not filled
+            This is also NOT a required input meaning that
+            the form will submit even if this field is not filled
           -->
           <input type="tel" id="phone-number" name="phone" />
           <!--The end of the first fieldset-->
         </fieldset>
         <!--
-        This adds spaces between the end of the
-        first fieldset and the start of the second fieldset.
+          This adds spaces between the end of the
+          first fieldset and the start of the second fieldset.
         -->
         <br />
         <br />
         <!--
-        This fieldset is used to group inputs
+          This fieldset is used to group inputs
           that are all asking to the user`s Comments and evidence.
 
           This fieldset is linked to my form using the id="feedback"
@@ -132,25 +132,25 @@
         -->
         <fieldset form="feedback">
           <!--
-          Provides a way for the user to know what
-          the fieldset is about and what will they need.
+            Provides a way for the user to know what
+            the fieldset is about and what will they need.
           -->
           <legend>Put your comments here!</legend>
           <!--
-          This label is for the input that will
-          allow the user to enter their comments.
+            This label is for the input that will
+            allow the user to enter their comments.
           -->
           <label for="comments">What did you think of the website?</label>
           <!--
-          This adds spaces between the label for
-          comments and the textarea for comments
+            This adds spaces between the label for
+            comments and the textarea for comments
         -->
           <br />
           <!--
-          The textarea input provides for a way for the user
-          to communicate extra text outside of normal questions
+            The textarea input provides for a way for the user
+            to communicate extra text outside of normal questions
 
-          it uses the id of comments to connect back to the label so the user can know what the textarea is for
+            it uses the id of comments to connect back to the label so the user can know what the textarea is for
           -->
           <textarea
             id="comments"
@@ -158,16 +158,16 @@
             rows="10"
             cols="50"></textarea>
           <!--
-          This adds spaces between the textarea and the <br />.
+            This adds spaces between the textarea and the <br />.
         -->
           <br />
           <!--
-          This adds spaces between one of the br and the other one
+            This adds spaces between one of the br and the other one
           -->
           <br />
           <!--
-          This label is for the input that will
-          allow the user to enter their evidence.
+            This label is for the input that will
+            allow the user to enter their evidence.
           -->
           <label for="evidence"
             >Put any links that might help me improve my website here</label
@@ -176,19 +176,19 @@
             This is a URL input type this allows us so paste a link in a text box,
             this also validates the certificates so you cant put random text in here.
 
-          This input will create a blank text box
-          for the user to type out the user`s desierd URL.
+            This input will create a blank text box
+            for the user to type out the user`s desierd URL.
 
-          It has an id of "evidence" so it can link back to the label.
+            It has an id of "evidence" so it can link back to the label.
 
-          It has the name="evidence" atribute for back-end servers.
+            It has the name="evidence" atribute for back-end servers.
 
-          This is also NOT a required input meaning that
-          the form will submit even if this field is not filled
+            This is also NOT a required input meaning that
+            the form will submit even if this field is not filled
           -->
           <input type="url" id="evidence" name="evidence" />
           <!--
-          This adds space between the URL input and the end of the second fieldset
+            This adds space between the URL input and the end of the second fieldset
           -->
           <br />
         </fieldset>
@@ -225,9 +225,6 @@
           value="click to reset all your form" />
       </form>
     </main>
-    <!--
-    
-    -->
     <footer>
       <a
         href="https://github.com/Sebvilla01/Web-Project-1-Sebastian"
